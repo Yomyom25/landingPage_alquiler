@@ -71,6 +71,27 @@
     font-weight: 600;
 }
 
+.nav-links {
+    background-color: var(--color-gris);
+    display: none;
+}
+
+.nav-links ul {
+    text-decoration: none;
+}
+.nav-links li {
+    padding: 10px 0;
+    border-bottom: 2px var(--color-azul) dotted;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: var(--color-azul);
+    font-family: var(--tipografia-subtitulo);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+}
+
 /* NAVBAR */
 .nav-bar {
     padding: 20px 40px;
@@ -145,11 +166,11 @@
 }
 
 .caption h1 {
-    font-size: 8vh;
+    font-size: 152%;
 }
 
 .caption p {
-    font-size: 4vh;
+    font-size: 120%;
 }
 
 .filtro {
@@ -874,7 +895,7 @@
     background-image: url(../img/fondo_parallax.jpg);
     background-attachment: fixed;
     position: relative;
-    min-height: 40vh;
+    min-height: 70vh;
     max-height: 600px;
     display: flex;
     justify-content: center;
