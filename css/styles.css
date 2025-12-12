@@ -568,7 +568,7 @@
     min-width: 50%;
     max-width: 48%;
     flex: 0 0 auto;
-    
+
     text-align: left;
     background-color: var(--color-blanco);
     border-radius: 10px;
@@ -727,7 +727,7 @@
         min-width: 95%;
         max-width: 95%;
     }
-    
+
     .texto-setion h3 {
         font-size: 28px;
     }
@@ -737,6 +737,7 @@
     .slide-title {
         font-size: 18px;
     }
+
     .slide-details {
         font-size: 12px;
     }
@@ -746,4 +747,118 @@
 /* BLOG */
 .blog-setion {
     padding: 40px 0;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+/* Contenedor principal de la galería */
+.contenedor-galeria {
+    padding: 20px 0;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px;
+    padding: 0 15px;/
+}
+
+.galeria-item {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.galeria-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Primera fila */
+.galeria-item:nth-child(1) {
+    grid-column: span 1;
+    grid-row: 1;
+}
+
+.galeria-item:nth-child(2) {
+    grid-column: span 2;
+    grid-row: 1;
+}
+
+/* Segunda fila */
+.galeria-item:nth-child(3) {
+    grid-column: span 1;
+    grid-row: 2;
+}
+
+.galeria-item:nth-child(4) {
+    grid-column: span 1;
+    grid-row: 2;
+}
+
+.galeria-item:nth-child(5) {
+    grid-column: span 1;
+    grid-row: 2;
+}
+
+.galeria-item figure {
+    margin: 0;
+    line-height: 0;
+    height: 100%;
+    position: relative;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.galeria-item:hover img {
+    transform: scale(1.05);
+}
+
+.filtro-gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: linear-gradient(0deg, rgba(31, 57, 110, 0.87) 10%, rgba(255, 255, 255, 0) 100%);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.galeria-item:hover .filtro-gradient {
+    opacity: 0.8;
+}
+
+.imagen-info {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    z-index: 5;
+    text-align: left;
+    color: var(--color-blanco);
+    pointer-events: none;/
+}
+
+.imagen-info p.titulo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.imagen-info p {
+    font-size: 14px;
+    margin-top: 25px;
 }

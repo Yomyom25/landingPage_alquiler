@@ -11,6 +11,10 @@
 
     <script src="responsiveslides.min.js"></script>
     <link rel="stylesheet" href="css/slidefotos.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+
     <script>
         $(function () {
             $("#slider4").responsiveSlides({
@@ -383,6 +387,68 @@
             <p class="gris texto">Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
         </div>
 
+        <div class="contenedor-galeria ancho">
+            <div class="galeria">
+                <a href="img/bh1.jpg" data-fancybox="gallery" data-caption="Living Room"
+                    class="galeria-item item-grande">
+                    <figure class="figure-blog">
+                        <img src="img/bh1.jpg" alt="Living Room">
+                        <div class="filtro-gradient"></div>
+                        <div class="imagen-info blanco texto">
+                            <p class="titulo bold">Living Room</p>
+                            <p>Size: 30 x 45</p>
+                        </div>
+                    </figure>
+                </a>
+
+                <a href="img/bh2.jpg" data-fancybox="gallery" data-caption="Dinning Room"
+                    class="galeria-item item-grande">
+                    <figure class="figure-blog">
+                        <img src="img/bh2.jpg" alt="Dinning Room">
+                        <div class="filtro-gradient"></div>
+                        <div class="imagen-info blanco texto">
+                            <p class="titulo bold">Dinning Room</p>
+                            <p>Size: 20 x 25</p>
+                        </div>
+                    </figure>
+                </a>
+
+                <a href="img/bh3.jpg" data-fancybox="gallery" data-caption="Kitchen" class="galeria-item item-mediano">
+                    <figure class="figure-blog">
+                        <img src="img/bh3.jpg" alt="Kitchen">
+                        <div class="filtro-gradient"></div>
+                        <div class="imagen-info blanco texto">
+                            <p class="titulo bold">Kitchen</p>
+                            <p>Size: 30 x 40</p>
+                        </div>
+                    </figure>
+                </a>
+
+                <a href="img/img_carrousel5.jpg" data-fancybox="gallery" data-caption="Parking"
+                    class="galeria-item item-mediano">
+                    <figure class="figure-blog">
+                        <img src="img/img_carrousel5.jpg" alt="Parking">
+                        <div class="filtro-gradient"></div>
+                        <div class="imagen-info blanco texto">
+                            <p class="titulo bold">Parking</p>
+                            <p>Size: 30 x 40</p>
+                        </div>
+                    </figure>
+                </a>
+
+                <a href="img/img_carrousel6.jpg" data-fancybox="gallery" data-caption="Bathroom"
+                    class="galeria-item item-pequeno">
+                    <figure class="figure-blog">
+                        <img src="img/img_carrousel6.jpg" alt="Bathroom">
+                        <div class="filtro-gradient"></div>
+                        <div class="imagen-info blanco texto">
+                            <p class="titulo bold">Bathroom</p>
+                            <p>Size: 10 x 20</p>
+                        </div>
+                    </figure>
+                </a>
+            </div>
+        </div>
     </section>
 
     <div id="modal_video" class="modal-video">
@@ -427,6 +493,10 @@
                     cerrarModalVideo();
                 }
             };
+
+            //Galeria
+            Fancybox.bind("[data-fancybox]", {
+            });
         </script>
 </body>
 
