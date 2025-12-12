@@ -1,0 +1,43 @@
+@media (max-width: 900px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .img-container, .text-about {
+        max-width: 100%;
+    }
+    .texto-img {
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px 10px 0 0;
+        border-top-right-radius: 10px;
+    }
+    .text-about p.naranja {
+        margin-top: 20px;
+    }
+    .like-container {
+        text-align: left;
+    }
+    .reason-text {
+        justify-content: center;
+    }
+    .acordeon-item {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .caracteristicas-video {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .caracteristica-card {
+        flex-basis: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .caracteristica-card {
+        flex-basis: 100%;
+    }
+}

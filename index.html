@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burj - Real Estate Agency</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="responsiveslides.min.js"></script>
+    <link rel="stylesheet" href="css/slidefotos.css">
+    <script>
+        $(function () {
+            $("#slider4").responsiveSlides({
+                auto: false,
+                pager: false,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <figure class="logo-nav">
+                <img src="img/header-logo2.png" alt="logo de Burj">
+            </figure>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#propiedades">Feature Property</a></li>
+                    <li><a href="#blog">Dropdown Blog</a></li>
+                    <li><a href="#contacto">Contact</a></li>
+                    <li><a href="#modal">Login / Register</a></li>
+                    <ul>
+            </nav>
+    </header>
+    <main class="main-section">
+        <div class="callbacks_container">
+            <ul class="rslides" id="slider4">
+                <li>
+                    <img src="img/slide1.jpg" alt="">
+                    <div class="filtro"></div>
+                </li>
+                <li>
+                    <img src="img/slide2.jpg" alt="">
+                    <div class="filtro"></div>
+                </li>
+                <li>
+                    <img src="img/slide3.jpg" alt="">
+                    <div class="filtro"></div>
+                </li>
+            </ul>
+            <div class="caption">
+                <h1 class="titulo">Best Real Estate Agency</h1>
+                <p class="subtitulo blanco">Best Location . Cheap Price</p>
+                <p class="titulo blanco bold">Price Started: 3,200,000</p>
+
+                <a href="#" class="btn-naranja subtitulo bold">REGISTER NOW</a>
+            </div>
+        </div>
+    </main>
+
+    <section class="about-section ancho" id="about">
+        <div class="img-container">
+            <figure>
+                <img src="img/about-img-1.jpg" alt="imagen about Burj">
+                <div class="texto-img">
+                    <p class="etiqueta-najanja blanco subtitulo">GET YOUR NEW HOME</p>
+                </div>
+            </figure>
+        </div>
+
+        <div class="text-about">
+            <p class="titulo naranja">VILLA OVERVIEW</p>
+            <h3 class="subtitulo naranja">ABOUT BURJ VILLA</h3>
+
+            <p class="price titulo">Price: 3.2M</p>
+
+            <p class="texto gris">Find your dream home in the most desirable locations. Explore a wide range of
+                properties tailored to your
+                needs and preferences. Start your journey to homeownership today.</p>
+
+            <div class="like-container">
+                <div class="reason-text">
+                    <div class="circulo">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <p class="texto naranja acordeon-titulo">Lorem ipsum dolor sit amet <i class="fa-solid fa-plus"></i>
+                    </p>
+                    <div class="acordeon-item">
+                        <div class="acordeon-contenido texto gris">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut optio mollitia delectus
+                            harum deleniti? Iste illo pariatur commodi maiores quas.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reason-text">
+                    <div class="circulo">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <p class="texto naranja acordeon-titulo">Sed tempor arcu non ligula convallis <i
+                            class="fa-solid fa-plus"></i></p>
+                    <div class="acordeon-item">
+                        <div class="acordeon-contenido texto gris">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut optio mollitia delectus
+                            harum deleniti? Iste illo pariatur commodi maiores quas.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reason-text">
+                    <div class="circulo">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <p class="texto naranja acordeon-titulo">Fusce sodales lacus sollicitudin <i
+                            class="fa-solid fa-plus"></i></p>
+                    <div class="acordeon-item">
+                        <div class="acordeon-contenido texto gris">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut optio mollitia delectus
+                            harum deleniti? Iste illo pariatur commodi maiores quas.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reason-text">
+                    <div class="circulo">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <p class="texto naranja acordeon-titulo">Curabitur efficitur gravida ligula siml is not <i
+                            class="fa-solid fa-plus"></i></p>
+                    <div class="acordeon-item">
+                        <div class="acordeon-contenido texto gris">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut optio mollitia delectus
+                            harum deleniti? Iste illo pariatur commodi maiores quas.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-container ancho">
+        <div class="video-container-overlay"></div>
+        <div class="caracteristicas-video ancho">
+            <div class="caracteristica-card">
+                <a href="#" class="card-icon">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                </a>
+                <div class="card-info">
+                    <p class="numero subtitulo">2500</p>
+                    <p class="texto gris">SQUARE FEET</p>
+                </div>
+            </div>
+
+            <div class="caracteristica-card">
+                <a href="#" class="card-icon">
+                    <i class="fa-solid fa-bed"></i>
+                </a>
+                <div class="card-info">
+                    <p class="numero subtitulo">6</p>
+                    <p class="texto gris">BEDROOMS</p>
+                </div>
+            </div>
+
+            <div class="caracteristica-card">
+                <a href="#" class="card-icon">
+                    <i class="fa-solid fa-bath"></i>
+                </a>
+                <div class="card-info">
+                    <p class="numero subtitulo">4</p>
+                    <p class="texto gris">BATHROOMS</p>
+                </div>
+            </div>
+
+            <div class="caracteristica-card">
+                <a href="#" class="card-icon">
+                    <i class="fa-solid fa-calendar-alt"></i>
+                </a>
+                <div class="card-info">
+                    <p class="numero subtitulo">2025</p>
+                    <p class="texto gris">YEAR BUILT</p>
+                </div>
+            </div>
+
+            <div class="caracteristica-card">
+                <a href="#" class="card-icon">
+                    <i class="fa-solid fa-car"></i>
+                </a>
+                <div class="card-info">
+                    <p class="numero subtitulo">2</p>
+                    <p class="texto gris">CAR PARKING</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal-section ancho">
+        <figure>
+            <img src="img/video-img.jpg" alt="foto del video">
+        </figure>
+
+        <div class="btn-video-modal">
+            <a href="#" id="boton_video_youtube"><i class="fa-solid fa-circle-play"></i></a>
+        </div>
+    </section>
+
+    <section class="propiedades-section" id="propiedades">
+        <div class="texto-setion ancho">
+            <h3 class="gris subtitulo">Featured Properties</h3>
+            <p class="gris texto">Handpicked properties by our team.</p>
+        </div>
+
+        
+    </section>
+
+    <div id="modal_video" class="modal-video">
+        <div class="modal-contenido-video">
+            <div class="video-responsive">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1GbR7J3HaFo?si=4LStIptenKlFnrE6"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <span class="cerrar-video" id="cerrar_modal_video">&times;</span>
+            </div>
+        </div>
+
+    <script>
+        //Acordeon 
+        $(".acordeon-titulo").click(function () {
+            var t = $(this);
+            var tp = t.next();
+            tp.slideToggle();
+
+            t.find("i").toggleClass("fa-plus fa-minus");
+        });
+
+        //video modal
+            $("#boton_video_youtube").click(function (e) {
+                e.preventDefault();
+                $("#modal_video").addClass("mostrar");
+            });
+
+            function cerrarModalVideo() {
+                $("#modal_video").removeClass("mostrar");
+            }
+
+            $("#cerrar_modal_video").click(function () {
+                cerrarModalVideo();
+            });
+
+            window.onclick = function (event) {
+                if (event.target.id === 'modal_video') {
+                    cerrarModalVideo();
+                }
+            };
+    </script>
+</body>
+
+</html>
