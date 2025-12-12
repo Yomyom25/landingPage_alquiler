@@ -40,7 +40,7 @@
 
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="#inicio">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#propiedades">Feature Property</a></li>
                     <li><a href="#blog">Dropdown Blog</a></li>
@@ -226,13 +226,169 @@
             <p class="gris texto">Handpicked properties by our team.</p>
         </div>
 
-        
+        <div id="carousel" class="propiedades-contenedor ancho">
+
+            <div id="slide-container">
+                <article class="slide" data-slideIndex="0">
+                    <figure class="slide-figure">
+                        <img src="img/img_carrousel1.jpg" alt="foto carrousel">
+                        <div class="labels-container">
+                            <span class="label for-rent">For Rent</span>
+                            <span class="label featured">Featured</span>
+                        </div>
+                        <div class="price-overlay">
+                            <span class="price-tag">
+                                $17,000/mo
+                            </span>
+                        </div>
+                    </figure>
+                    <div class="slide-content">
+                        <p class="slide-type naranja texto">Apartment</p>
+                        <h3 class="slide-title subtitulo">Luxury Best Apartment</h3>
+                        <p class="slide-location texto gris"><i class="fa-solid fa-location-dot"></i> 11th Street, USA
+                        </p>
+                        <div class="slide-details texto">
+                            <span>Beds: 4</span>
+                            <span>Baths: 2</span>
+                            <span>Sq Ft: 1233</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="slide" data-slideIndex="1">
+                    <figure class="slide-figure">
+                        <img src="img/img_carrousel2.jpg" alt="foto carrousel">
+                        <div class="labels-container">
+                            <span class="label for-rent">For Rent</span>
+                        </div>
+                        <div class="price-overlay">
+                            <span class="price-tag">
+                                $16,000/mo
+                            </span>
+                        </div>
+                    </figure>
+                    <div class="slide-content">
+                        <p class="slide-type naranja texto">Villa</p>
+                        <h3 class="slide-title subtitulo">Renovated Villa</h3>
+                        <p class="slide-location texto gris"><i class="fa-solid fa-location-dot"></i> 11th Street, USA
+                        </p>
+                        <div class="slide-details texto">
+                            <span>Beds: 4</span>
+                            <span>Baths: 2</span>
+                            <span>Sq Ft: 3342</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="slide" data-slideIndex="2">
+                    <figure class="slide-figure">
+                        <img src="img/img_carrousel3.jpg" alt="foto carrousel">
+                        <div class="labels-container">
+                            <span class="label for-rent">For Rent</span>
+                        </div>
+                        <div class="price-overlay">
+                            <span class="price-tag">
+                                $15,500/mo
+                            </span>
+                        </div>
+                    </figure>
+                    <div class="slide-content">
+                        <p class="slide-type naranja texto">Apartment</p>
+                        <h3 class="slide-title subtitulo">Modern Studio</h3>
+                        <p class="slide-location texto gris"><i class="fa-solid fa-location-dot"></i> 5th Avenue, USA
+                        </p>
+                        <div class="slide-details texto">
+                            <span>Beds: 1</span>
+                            <span>Baths: 1</span>
+                            <span>Sq Ft: 800</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="slide" data-slideIndex="3">
+                    <figure class="slide-figure">
+                        <img src="img/img_carrousel4.jpg" alt="foto carrousel">
+                        <div class="labels-container">
+                            <span class="label for-rent">For Rent</span>
+                            <span class="label featured">Featured</span>
+                        </div>
+                        <div class="price-overlay">
+                            <span class="price-tag">
+                                $19,000/mo
+                            </span>
+                        </div>
+                    </figure>
+                    <div class="slide-content">
+                        <p class="slide-type naranja texto">House</p>
+                        <h3 class="slide-title subtitulo">Beachfront Property</h3>
+                        <p class="slide-location texto gris"><i class="fa-solid fa-location-dot"></i> Ocean Drive, USA
+                        </p>
+                        <div class="slide-details texto">
+                            <span>Beds: 5</span>
+                            <span>Baths: 4</span>
+                            <span>Sq Ft: 4500</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="slide" data-slideIndex="3">
+                    <figure class="slide-figure">
+                        <img src="img/img_carrousel5.jpg" alt="foto carrousel">
+                        <div class="labels-container">
+                            <span class="label for-rent">For Rent</span>
+                            <span class="label featured">Featured</span>
+                        </div>
+                        <div class="price-overlay">
+                            <span class="price-tag">
+                                $19,000/mo
+                            </span>
+                        </div>
+                    </figure>
+                    <div class="slide-content">
+                        <p class="slide-type naranja texto">House</p>
+                        <h3 class="slide-title subtitulo">Beachfront Property</h3>
+                        <p class="slide-location texto gris"><i class="fa-solid fa-location-dot"></i> Ocean Drive, USA
+                        </p>
+                        <div class="slide-details texto">
+                            <span>Beds: 5</span>
+                            <span>Baths: 4</span>
+                            <span>Sq Ft: 4500</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="contenedor_flechas">
+                <a href="#" id="back-button" class="arrow back">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+
+                <a href="#" id="forward-button" class="arrow forward">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            </div>
+
+            <div class="slide-indicators">
+                <div class="slide-indicator active"></div>
+                <div class="slide-indicator"></div>
+                <div class="slide-indicator"></div>
+                <div class="slide-indicator"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-setion ancho" id="blog">
+        <div class="texto-setion ancho">
+            <h3 class="gris subtitulo">Gallery</h3>
+            <p class="gris texto">Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
+        </div>
+
     </section>
 
     <div id="modal_video" class="modal-video">
         <div class="modal-contenido-video">
             <div class="video-responsive">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/1GbR7J3HaFo?si=4LStIptenKlFnrE6"
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/j4XDLM4VbsY?si=9YpHzS6wWBT7CCYl"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -240,17 +396,19 @@
             </div>
         </div>
 
-    <script>
-        //Acordeon 
-        $(".acordeon-titulo").click(function () {
-            var t = $(this);
-            var tp = t.next();
-            tp.slideToggle();
+        <script src="carousel.js"></script>
 
-            t.find("i").toggleClass("fa-plus fa-minus");
-        });
+        <script>
+            //Acordeon 
+            $(".acordeon-titulo").click(function () {
+                var t = $(this);
+                var tp = t.next();
+                tp.slideToggle();
 
-        //video modal
+                t.find("i").toggleClass("fa-plus fa-minus");
+            });
+
+            //video modal
             $("#boton_video_youtube").click(function (e) {
                 e.preventDefault();
                 $("#modal_video").addClass("mostrar");
@@ -269,7 +427,7 @@
                     cerrarModalVideo();
                 }
             };
-    </script>
+        </script>
 </body>
 
 </html>
