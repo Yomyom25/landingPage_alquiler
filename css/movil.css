@@ -1,4 +1,64 @@
-@media (max-width: 900px) {
+.menu-movil {
+    display: none;
+    padding: 15px 20px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.menu-movil i {
+    font-size: 26px;
+    color: var(--color-azul);
+    cursor: pointer;
+}
+
+.nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: var(--color-blanco);
+    box-shadow: -4px 0 15px rgba(0,0,0,0.2);
+    padding: 60px 25px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    transition: right .4s ease;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.nav-links li a {
+    font-size: 18px;
+    color: var(--color-azul);
+    text-decoration: none;
+}
+
+.nav-links.abrir_menu {
+    right: 0;
+}
+
+.menu-close {
+    font-size: 32px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    color: var(--color-dorado);
+    display: block;
+}
+
+@media (max-width: 720px) {
     .about-section {
         flex-direction: column;
         text-align: center;
@@ -24,9 +84,7 @@
     .acordeon-item {
         padding-left: 0;
     }
-}
 
-@media (max-width: 900px) {
     .caracteristicas-video {
         flex-wrap: wrap;
         justify-content: center;
@@ -35,22 +93,11 @@
         flex-basis: calc(50% - 10px);
         margin-bottom: 20px;
     }
-}
-@media (max-width: 500px) {
-    .caracteristica-card {
-        flex-basis: 100%;
-    }
-}
-
-
-/* MEDIA QUERIES para responsividad */
-@media screen and (max-width: 992px) {
-    /* En tablets, cambiamos a 2 columnas */
+    
     .galeria {
         grid-template-columns: repeat(2, 1fr);
     }
     
-    /* Todos los items ocupan una columna en la cuadrícula de 2 columnas */
     .galeria-item:nth-child(1),
     .galeria-item:nth-child(2),
     .galeria-item:nth-child(3),
@@ -61,8 +108,11 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    /* En móviles, volvemos a una sola columna */
+@media (max-width: 430px) {
+    .caracteristica-card {
+        flex-basis: 100%;
+    }
+
     .galeria {
         grid-template-columns: 1fr;
     }

@@ -43,7 +43,30 @@
 </head>
 
 <body>
-    <header id="home">
+    <header id="home" class="header-sticky-container">
+
+        <div class="menu-movil">
+            <figure class="logo-nav">
+                <img src="img/logo_header.png" alt="logo de Lovespring">
+            </figure>
+
+            <i id="btn_open_menu" class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Menú lateral que se abre en móvil -->
+        <nav class="nav-links" id="menu_lateral">
+            <i id="btn_close_menu" class="fa-solid fa-xmark menu-close"></i>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#propiedades">Feature Property</a></li>
+                <li><a href="#blog">Dropdown Blog</a></li>
+                <li><a href="#contacto">Contact</a></li>
+                <li><a href="#modal">Login / Register</a></li>
+            </ul>
+        </nav>
+
         <div class="nav-bar">
             <figure class="logo-nav">
                 <img src="img/header-logo2.png" alt="logo de Burj">
@@ -596,6 +619,26 @@
         <script src="carousel.js"></script>
 
         <script>
+            //menu
+            const btnOpen = document.getElementById("btn_open_menu");
+            const btnClose = document.getElementById("btn_close_menu");
+            const menu = document.getElementById("menu_lateral");
+
+            btnOpen.addEventListener("click", () => {
+                menu.classList.add("abrir_menu");
+            });
+
+            btnClose.addEventListener("click", () => {
+                menu.classList.remove("abrir_menu");
+            });
+
+            // Cerrar tocando fuera
+            menu.addEventListener("click", (e) => {
+                if (e.target === menu) {
+                    menu.classList.remove("abrir_menu");
+                }
+            });
+
             //Acordeon 
             $(".acordeon-titulo").click(function () {
                 var t = $(this);
