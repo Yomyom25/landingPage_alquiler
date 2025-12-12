@@ -15,7 +15,13 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <div class="boton-arriba">
 
+        <a href="#home">
+            <i class="ir-arriba fa fa-arrow-up fa-1x"></i>
+        </a>
+
+    </div>
     <script>
         $(function () {
             $("#slider4").responsiveSlides({
@@ -37,7 +43,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <div class="nav-bar">
             <figure class="logo-nav">
                 <img src="img/header-logo2.png" alt="logo de Burj">
@@ -54,7 +60,7 @@
                     <ul>
             </nav>
     </header>
-    <main class="main-section">
+    <main class="main-section" id="home">
         <div class="callbacks_container">
             <ul class="rslides" id="slider4">
                 <li>
@@ -465,6 +471,116 @@
         </div>
         <div class="filtro-parallax"></div>
     </section>
+
+    <section class="contact-section" id="contacto">
+        <div class="texto-setion ancho">
+            <h3 class="gris subtitulo">Contact Us</h3>
+            <p class="gris texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="contact-container ancho">
+            <div class="fom-container ancho">
+                <form class="contact-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="name*" required>
+                        <input type="email" placeholder="email*" required>
+                    </div>
+
+                    <input type="tel" placeholder="phone*" required>
+
+                    <input type="text" placeholder="subject">
+
+                    <textarea placeholder="write your message*" required></textarea>
+
+                    <button type="submit" class="btn-submit">send</button>
+                </form>
+            </div>
+
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.2853124569046!2d-89.60888392368042!3d20.9811972894084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f567138a0b9a117%3A0xdd1c75425de14825!2sAPARTAMENTOS%20M%C3%89RIDA!5e0!3m2!1ses-419!2smx!4v1765577141981!5m2!1ses-419!2smx"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <!-- newsletter -->
+        <div class="newsletter">
+            <div class="newsletter-content ancho">
+                <div class="newsletter-text">
+                    <h3 class="blanco subtitulo">subscribe our newsletter</h3>
+                    <p class="blanco texto">get offers on your email free</p>
+                </div>
+
+                <form class="newsletter-form">
+                    <input type="email" placeholder="your email" required>
+                    <button type="submit">subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- footer main -->
+        <div class="footer-main">
+            <div class="footer-grid ancho">
+                <div class="footer-col">
+                    <h4 class="blanco subtitulo">about us</h4>
+                    <p class="texto gris">
+                        find your dream home in the most desirable locations.
+                        explore a wide range of properties tailored to your needs
+                        and preferences. start your journey to homeownership today
+                    </p>
+
+                    <div class="social-icons">
+                        <a href="#">f</a>
+                        <a href="#">x</a>
+                        <a href="#">in</a>
+                        <a href="#">p</a>
+                        <a href="#">g</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="blanco subtitulo">quick links</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">terms & conditions</a></li>
+                        <li><a href="#">user's guide</a></li>
+                        <li><a href="#">support center</a></li>
+                        <li><a href="#">press info</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="blanco subtitulo">our projects</h4>
+                    <ul>
+                        <li><a href="#">damasc</a></li>
+                        <li><a href="#">downtown</a></li>
+                        <li><a href="#">high villa</a></li>
+                        <li><a href="#">jumeria beach</a></li>
+                        <li><a href="#">any other</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="blanco subtitulo">contact us</h4>
+                    <ul>
+                        <li>info@example.com</li>
+                        <li>11 west town</li>
+                        <li>1234, united states</li>
+                        <li>+1 1234 56 789</li>
+                        <li>+1 1234 56 788</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="gris texto">buri © 2025. made with love.</p>
+            </div>
+        </div>
+    </footer>
+
 
     <div id="modal_video" class="modal-video">
         <div class="modal-contenido-video">
