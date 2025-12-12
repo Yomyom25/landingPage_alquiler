@@ -15,13 +15,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
-    <div class="boton-arriba">
 
-        <a href="#home">
-            <i class="ir-arriba fa fa-arrow-up fa-1x"></i>
-        </a>
+    <link rel="stylesheet" href="css/animate.css" />
+    <script src="js/wow.min.js"></script>
 
-    </div>
     <script>
         $(function () {
             $("#slider4").responsiveSlides({
@@ -43,6 +40,13 @@
 </head>
 
 <body>
+
+    <div class="boton-arriba">
+        <a href="#home">
+            <i class="ir-arriba fa fa-arrow-up fa-1x"></i>
+        </a>
+    </div>
+
     <header id="home" class="header-sticky-container">
 
         <div class="menu-movil">
@@ -110,7 +114,7 @@
     </main>
 
     <section class="about-section ancho" id="about">
-        <div class="img-container">
+        <div class="img-container wow animate__animated animate__bounceInLeft">
             <figure>
                 <img src="img/about-img-1.jpg" alt="imagen about Burj">
                 <div class="texto-img">
@@ -119,11 +123,11 @@
             </figure>
         </div>
 
-        <div class="text-about">
+        <div class="text-about wow animate__animated animate__bounceInRight">
             <p class="titulo naranja">VILLA OVERVIEW</p>
             <h3 class="subtitulo naranja">ABOUT BURJ VILLA</h3>
 
-            <p class="price titulo">Price: 3.2M</p>
+            <p class="price titulo wow animate__animated animate__bounceIn">Price: 3.2M</p>
 
             <p class="texto gris">Find your dream home in the most desirable locations. Explore a wide range of
                 properties tailored to your
@@ -189,7 +193,7 @@
         </div>
     </section>
 
-    <section class="video-container ancho">
+    <section class="video-container ancho wow animate__animated animate__bounceIn">
         <div class="video-container-overlay"></div>
         <div class="caracteristicas-video ancho">
             <div class="caracteristica-card">
@@ -232,7 +236,7 @@
                 </div>
             </div>
 
-            <div class="caracteristica-card">
+            <div class="caracteristica-card wow animate__animated animate__bounceIn">
                 <a href="#" class="card-icon">
                     <i class="fa-solid fa-car"></i>
                 </a>
@@ -244,7 +248,7 @@
         </div>
     </section>
 
-    <section class="modal-section ancho">
+    <section class="modal-section ancho wow animate__animated animate__fadeInRightBig">
         <figure>
             <img src="img/video-img.jpg" alt="foto del video">
         </figure>
@@ -260,7 +264,7 @@
             <p class="gris texto">Handpicked properties by our team.</p>
         </div>
 
-        <div id="carousel" class="propiedades-contenedor ancho">
+        <div id="carousel" class="propiedades-contenedor ancho wow animate__animated animate__fadeIn">
 
             <div id="slide-container">
                 <article class="slide" data-slideIndex="0">
@@ -619,6 +623,9 @@
         <script src="carousel.js"></script>
 
         <script>
+            // Inicializar WOW
+            new WOW().init();
+
             //menu
             const btnOpen = document.getElementById("btn_open_menu");
             const btnClose = document.getElementById("btn_close_menu");
@@ -633,11 +640,12 @@
             });
 
             // Cerrar tocando fuera
-            menu.addEventListener("click", (e) => {
+            menu.adventListener("click", (e) => {
                 if (e.target === menu) {
                     menu.classList.remove("abrir_menu");
                 }
             });
+
 
             //Acordeon 
             $(".acordeon-titulo").click(function () {
